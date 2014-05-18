@@ -1,10 +1,11 @@
 /*
  * Social Buttons for Bootstrap
  *
- * Copyright 2013-2014 Panayiotis Lipiridis
+ * Originally by Panayiotis Lipiridis
+ * Appended to by Arnav Kumar
  * Licensed under the MIT License
  *
- * https://github.com/lipis/bootstrap-social
+ * https://github.com/radzinzki/bootstrap-social
  */
 
 @bs-height-base: (@line-height-computed + @padding-base-vertical * 2);
@@ -84,11 +85,46 @@
     padding-left: 0;
     padding-right: 0;
   }
+  color: white;
+  border-right: none;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color : white;
+  }
 }
 
 .btn-social(@color-bg, @color: white) {
   background-color: @color-bg;
   .button-variant(@color, @color-bg, rgba(0, 0, 0, 0.2));
+}
+
+.btn-social-transparent (@color-bg, @color: white) {
+  background-color: rgba(0,0,0,0);
+
+  border-color: darken(@color-bg, 10%);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color : @color-bg;
+    border-color : darken(@color-bg, 10%);
+  }
+  :first-child {
+    border-right:1px solid darken(@color-bg, 10%);
+    background-color:rgba(0,0,0,0);
+  }
+  &:hover :first-child  {
+    border-right:1px solid darken(@color-bg, 10%);
+  }
+}
+
+.btn-social-half-transparent (@color-bg) {
+  .btn-social-transparent (@color-bg);
+  :first-child {
+    background-color:@color-bg;
+  }
 }
 
 
@@ -104,3 +140,30 @@
 .btn-tumblr        { .btn-social(#2c4762); }
 .btn-twitter       { .btn-social(#55acee); }
 .btn-vk            { .btn-social(#587ea3); }
+
+.btn-bitbucket-transparent     { .btn-social-transparent(#205081); }
+.btn-dropbox-transparent       { .btn-social-transparent(#1087dd); }
+.btn-facebook-transparent      { .btn-social-transparent(#3b5998); }
+.btn-flickr-transparent        { .btn-social-transparent(#ff0084); }
+.btn-foursquare-transparent    { .btn-social-transparent(#0072b1); }
+.btn-github-transparent        { .btn-social-transparent(#444444); }
+.btn-google-plus-transparent   { .btn-social-transparent(#dd4b39); }
+.btn-instagram-transparent     { .btn-social-transparent(#3f729b); }
+.btn-linkedin-transparent      { .btn-social-transparent(#007bb6); }
+.btn-tumblr-transparent        { .btn-social-transparent(#2c4762); }
+.btn-twitter-transparent       { .btn-social-transparent(#55acee); }
+.btn-vk-transparent            { .btn-social-transparent(#587ea3); }
+
+.btn-bitbucket-half-transparent     { .btn-social-half-transparent(#205081); }
+.btn-dropbox-half-transparent       { .btn-social-half-transparent(#1087dd); }
+.btn-facebook-half-transparent      { .btn-social-half-transparent(#3b5998); }
+.btn-flickr-half-transparent        { .btn-social-half-transparent(#ff0084); }
+.btn-foursquare-half-transparent    { .btn-social-half-transparent(#0072b1); }
+.btn-github-half-transparent        { .btn-social-half-transparent(#444444); }
+.btn-google-plus-half-transparent   { .btn-social-half-transparent(#dd4b39); }
+.btn-instagram-half-transparent     { .btn-social-half-transparent(#3f729b); }
+.btn-linkedin-half-transparent      { .btn-social-half-transparent(#007bb6); }
+.btn-tumblr-half-transparent        { .btn-social-half-transparent(#2c4762); }
+.btn-twitter-half-transparent       { .btn-social-half-transparent(#55acee); }
+.btn-vk-half-transparent            { .btn-social-half-transparent(#587ea3); }
+
