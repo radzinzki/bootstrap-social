@@ -10,7 +10,9 @@ h3{font-weight:300}
 .jumbotron p a:hover,.jumbotron-links a:hover{text-shadow:0 0 10px rgba(255,255,255,0.55)}
 .jumbotron-links{margin-top:15px;margin-bottom:0;padding-left:0;list-style:none;font-size:14px}.jumbotron-links li{display:inline}
 .jumbotron-links li+li{margin-left:20px}
+code{background-color: #333; color: #ddd; }
 .how-to h2{text-align:center}
+.how-to pre{background-color: rgba(0,0,0,0.7); color: #bbb;}
 .how-to .heading{font-size:21px;line-height:1.7;margin-top:20px}.how-to p{font-size:16px;color:#999}
 .how-to code{font-size:85%;word-wrap:break-word;white-space:normal}
 footer{text-align:center;opacity:.8;padding:20px 0 40px}
