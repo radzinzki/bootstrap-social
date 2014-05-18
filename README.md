@@ -15,9 +15,8 @@ Include the `bootstrap-social.css` or `bootstrap-social.less` in your project.
 Available classes
 -----------------
 
-
 | Social Network | Default Style | Transparent | Half-Transparent |
-| ------------- |:-------------:| :-----:|
+|------------- | ------------- |------------- | -------------|
 | Bitbucket | `btn-bitbucket` | `btn-bitbucket-transparent` |  `btn-bitbucket-half-transparent` |
 | Dropbox | `btn-dropbox` | `btn-dropbox-transparent` |  `btn-dropbox-half-transparent` |
 | Facebook | `btn-facebook` | `btn-facebook-transparent` |  `btn-facebook-half-transparent` |
