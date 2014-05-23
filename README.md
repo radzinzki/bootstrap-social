@@ -39,7 +39,7 @@ Examples
       Sign in with Twitter
     </a>
     
-    <a class="btn btn-block btn-social btn-vk btn-vk-transparent">
+    <a class="btn btn-block btn-social btn-vk-transparent">
       <i class="fa fa-twitter"></i> Sign in with Twitter
     </a>
 
