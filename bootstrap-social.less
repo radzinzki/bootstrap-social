@@ -101,7 +101,9 @@
 }
 
 .btn-social-transparent (@color-bg, @color: white) {
-  background-color: rgba(0,0,0,0);
+  // background-color: rgba(0,0,0,0);
+  .btn-social(@color-bg);
+  background: none;
 
   border-color: darken(@color-bg, 10%);
   &:hover,
@@ -114,9 +116,50 @@
   :first-child {
     border-right:1px solid darken(@color-bg, 10%);
     background-color:rgba(0,0,0,0);
+    
   }
   &:hover :first-child  {
     border-right:1px solid darken(@color-bg, 10%);
+  }
+
+  &.btn-social-icon :first-child {
+    border-radius: 4px;
+  }
+
+  &.btn-lg {
+    &.btn-social-icon {
+      :first-child {
+        border-radius: 4px;
+      }
+    }
+    :first-child {
+      -webkit-border-top-left-radius: 4px;
+      -webkit-border-bottom-left-radius: 4px;
+    }
+  }
+
+  &.btn-sm {
+    &.btn-social-icon {
+      :first-child {
+        border-radius: 3px;
+      }
+    }
+    :first-child {
+      -webkit-border-top-left-radius: 3px;
+      -webkit-border-bottom-left-radius: 3px;
+    }
+  }
+
+  &.btn-xs {
+    &.btn-xs.btn-social-icon {
+      :first-child {
+        border-radius: 3px;
+      }
+    }
+    :first-child {
+      -webkit-border-top-left-radius: 3px;
+      -webkit-border-bottom-left-radius: 3px;
+    }
   }
 }
 
